@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .bg-img {
+            background-image: url("wp.jpg");
+            width: 100%;
+            min-height: 200px;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            width: 100%;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #6d5845;
+            display: flex;
+            flex-wrap: wrap; /* Wraps items on smaller screens */
+        }
+
+        .topnav a {
+            flex: 1; /* Adjusts navigation items to fit equally */
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Wraps content for small screens */
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image {
+            flex: 1 1 300px; /* Shrinks to fit on small screens */
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%; /* Ensures image scales properly */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            flex: 2 1 300px; /* Shrinks to fit on small screens */
+            margin: 10px;
+        }
+
+        .skills-table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            background-color: #FFFFE0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-table th, .skills-table td {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        .skills-table th {
+            background-color: #6d5845;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .skills-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .progress-bar {
+            display: inline-block;
+            height: 10px;
+            width: 100%;
+            background-color: #d1c2b6;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #3D2B1F;
+        }
+
+        footer {
+            background-color: #e0d6cc;
+            color: #010101;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            margin: 10px;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .topnav a {
+                font-size: 14px;
+                padding: 10px;
+                flex: 100%; /* Stack navigation items vertically */
+            }
+
+            .container {
+                flex-direction: column; /* Stack content vertically */
+            }
+
+            .skills-table {
+                font-size: 12px; /* Adjusts font size for better readability */
+                overflow-x: auto; /* Adds horizontal scrolling if needed */
+            }
+
+            .text {
+                text-align: center; /* Centers text on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Section -->
+    <div class="bg-img">
+        <div class="content">
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <a href="family.html">Family</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container">
+        <div class="image">
+            <img src="2.jpg" alt="Picture of Me">
+        </div>
+        <div class="text">
+            <h1>About Me.</h1>
+            <p>Born and raised in a coastal town in Perak, located in the north of Malaysia and surrounded by islands. Until I was 11 years and 3 months old, I moved to the south of Malaysia in Johor, a place filled with palm trees and factories.</p>
+            <p>Now, I am 20 years old, female, and trying to find a job related to my course and skills to continue my knowledge in the field I studied, which is Information Management.</p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="container">
+        <div class="text">
+            <center><h1>My Skills.</h1></center>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Proficiency</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proficiency in managing databases</td>
+                        <td><div class="progress-bar"><span style="width: 70%;"></span></div></td>
+                        <td>SQL, Microsoft Access</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <h2>Contact Me</h2>
+        <div class="social-media">
+            <a href="https://www.instagram.com/shaheziqaafila/" target="_blank"><img src="instagram.png" title="Instagram"></a>
+            <a href="mailto:shaheziqaafila@gmail.com"><img src="mail logo.png" title="Email"></a>
+        </div>
+        <p>Copyright &copy; 2024 by shaheziqaafila | All rights reserved</p>
+    </footer>
+</body>
+</html>
