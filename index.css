@@ -149,3 +149,43 @@ footer {
 	align-audio: center;
 	background-color: #3D2B1F;
 	}
+
+     .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        background-color: #FFF5E0;
+        width: 300px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+        animation: slideIn 1.5s ease-in-out;
+    }
+
+    .card h3 {
+        color: #6d5845;
+    }
+
+    .card p {
+        color: #555;
+    }
+
+    .card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #6d5845;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .card a:hover {
+        background-color: #3D2B1F;
+    }
