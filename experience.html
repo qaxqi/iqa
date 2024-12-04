@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:"Times New Roman", Times, serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-img {
+            background-image: url("wp.jpg");
+            width: 100%;
+            padding: 20px;
+            min-height: 200px;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .container {
+            position: absolute;
+            margin: 20px;
+            width: auto;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background: shadow;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .main {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .main h1 {
+            font-size: 38px;
+        }
+
+        .box-container {
+            display: flex;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            gap: 20px;
+            align-items: flex-start;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .image {
+            flex: 1;
+        }
+
+        .image img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .testimonials {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .testimonial {
+            padding: 15px;
+            border-left: 4px solid #4b3621;
+            background-color: #e8e9eb;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+            text-align: right;
+        }
+	
+	 @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+	
+	
+	body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+	.main {
+            text-align: center;
+            margin: 30px 0;
+	    animation: slideIn 1.5s ease-in-out;
+        }
+
+	.main h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+	.main p {
+            font-size: 18px;
+	    color: #4b3621;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+	.images-row {
+           
+            justify-content: space-between;
+            flex-wrap: wrap;
+	    position: center;
+	    gap: 30px;
+	    animation: slideIn 1.5s ease-in-out;
+            }
+
+        .images-row img {
+            width: calc(50% - 10px);
+            max-width: 30%;
+            border-radius: 5px;
+        }
+
+	@media (max-width: 768px) {
+	.images-row img {
+            width: 100%; 
+            }
+        }
+
+
+        footer {
+            background-color: #e0d6cc;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .anchor-sidebar {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #4b3621;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .anchor-sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .anchor-sidebar a:hover {
+            color: #ddd;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-img">
+        <div class="container">
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <a href="family.html">Family</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="work-experience" class="main">
+<br>
+<br>
+<br>
+<br>
+        <h1>My Work Experience.</h1>
+
+        <div class="box-container">
+            <div class="image">
+                <a href="https://www.restaurants10.com/MY/Muar/100721639988652/7C-Sailor-Restaurant-Muar-Johor-Malaysia"<a/> <img src="15.jpg" alt="Wallpaper Brown">
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonial">
+                    During my time working at <b>Catering 7C</b>, as a young teenager, I gained valuable hands-on experience in the food service industry. From the age of 15 to 16, over the course of approximately three to four months, I required to assist in food preparation,  organized and maintained a clean workspace, and ensure customers received high-quality service. 
+                </div>
+
+                <div class="testimonial">
+                    It meant a lot because the catering business was owned by a close family friend who had worked with my father before in the navy. The connection gave the job a sense of trust and familiarity, and I approached the role with a strong sense of responsibility and determination to make the most of the opportunity.
+
+                </div>
+
+                <div class="testimonial">
+                    I value this experience for the practical skills and personal growth it encouraged. <b> It taught me that hard work, adaptability, and a positive attitude can lead to meaningful contributions in any workplace.</b>             
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="internship-experience" class="main">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<div class="main">
+        <h1>My Internship Experience in Law Firm.</h1>
+        <p>
+<br>
+<br>
+            My internship experience at <b>A.K. Yeong & Co.</b> has been enriching and very relevant<br> to my diploma course in Information Management.Over the course of two months, I was entrusted with various responsibilities<br> that deepened my understanding of records management and its importance in professional settings.<br><br>
+
+	<b>My main duties include organizing and maintaining the firm's legal records, <br> ensuring that all client files and case documents are organized systematically for easy access and retrieval.<br> </b> I also played a role in digitizing old records, which allowed me to apply the theoretical knowledge I gained during my studies <br> to real-world scenarios.<br><br>
+
+	Through this hands-on experience I learned how to handle records with care, adhering to strict policies to <br> protect client privacy while maintaining professional integrity. In addition, I improved my organizational and time management skills as <br> I balanced the demands of sorting through large amounts of information, meeting deadlines and coordinating with colleagues <br> to ensure a smooth workflow. 
+        </p>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+	<div class="content">
+    <div class="images-row">
+        <img src="7.jpg" alt="Picture of me during internship.-1" 
+title="During my Internship">
+	<img src="14.jpg" alt="Picture of me during internship.-2" title="Last day of internship">
+	<img src="17.jpg" alt="Picture of me during internship.-2" title="Learned about the law during my intern">
+</div>
+</div>
+</div>
+
+
+    <footer>
+        <div class="footer">
+            <h2>Contact Me</h2>
+            <div class="social-media">
+                <a href="https://www.instagram.com/shaheziqaafila/" target="_blank">
+                    <img src="instagram.png" title="Instagram">
+                </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                    <img src="mail logo.png" title="Email">
+                </a>
+                <a href="https://x.com/shaheziqaafila" target="_blank">
+                    <img src="twitter.png" title="Twitter">
+                </a>
+            </div>
+        </div>
+        Copyright &copy; 2024 shaheziqaafila | All rights reserved.
+    </footer>
+
+    <!-- Sidebar Anchor Links -->
+    <div class="anchor-sidebar">
+        <a href="#work-experience">Work Experience</a>
+        <a href="#internship-experience">Internship Experience</a>
+    </div>
+</body>
+</html>
