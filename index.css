@@ -1,0 +1,30 @@
+footer {
+        background-color: #e0d6cc;
+        color: #010101;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .social-media a {
+        margin: 0 10px;
+    }
+
+    .social-media img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
